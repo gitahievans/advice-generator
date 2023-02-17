@@ -1,14 +1,19 @@
-import React from 'react'
+import React from "react";
 
-const Advice = ({advice}) => {
+const Advice = ({ advice }) => {
   return (
-    <div>
-    <p>ADVICE #{advice.id}</p>
-    <div>
-    <p>{advice.advice}</p>
+    <div className="container">
+      {advice ? <p id="ad">ADVICE #{advice.id}</p> : null}
+      <div className="advice-container">
+        {advice ? <p>"{advice.advice}"</p> : <p>Roll dice to see quotes</p>}
+      </div>
+      <img
+        src="/images/pattern-divider-mobile.svg"
+        alt=""
+        className="divider"
+      />
     </div>
-    </div>
-  )
-}
+  );
+};
 
-export default Advice
+export default Advice;

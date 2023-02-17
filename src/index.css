@@ -1,3 +1,121 @@
+body {
+  font-family: 'Manrope';
+}
+
+:root {
+  --light-cyan: hsl(193, 38%, 86%);
+  --neon-green: hsl(150, 100%, 66%);
+  --grayish-blue: hsl(217, 19%, 38%);
+  --dark-grayish-blue: hsl(217, 19%, 24%);
+  --dark-blue: hsl(218, 23%, 16%);
+}
+
+.app {
+  background-color: var(--dark-blue);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.container {
+  background-color: var(--dark-grayish-blue);
+  width: 90%;
+  height: 48%;
+  margin-top: 32%;
+  display: inherit;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-evenly; */
+  border-radius: 4%;
+}
+
+.advice-container {
+  /* background: skyblue; */
+  height: 50%;
+  padding: 0 5%;
+  margin-top: 2%;
+}
+
+#ad {
+  font-size: .7em;
+  letter-spacing: .2em;
+  color: var(--neon-green);
+  font-weight: 800;
+  margin-top: 10%;
+}
+
+.advice-container p {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 800;
+  color: white;
+}
+
+
+
+.divider {
+  margin-top: 3%;
+}
+
+
+.btn {
+  height: 65px;
+  width: 65px;
+  border-radius: 50%;
+  position: absolute;
+  top: 60.5%;
+  z-index: 1;
+  background-color: var(--neon-green);
+  cursor: pointer;
+  border: 3px solid transparent;
+  transition: box-shadow .2s ease-in-out;
+}
+
+.dice{
+  position: absolute;
+  top: 33.5%;
+  left: 30%;
+}
+
+
+.btn:hover {
+  box-shadow: 0 0 20px 2px var(--neon-green);
+}
+.btn:focus,
+.btn:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;

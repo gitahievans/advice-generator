@@ -16,9 +16,11 @@ function App() {
   };
 
   return (
-    <div>
-      <Advice advice={advice}/>
-      <button onClick={fetchAdvice}>Fetch</button>
+    <div className="app">
+      <Advice advice={advice} />
+      <div className="btn" onClick={fetchAdvice}>
+        <img src="public/images/icon-dice.svg" alt="roll" className="dice"/>
+      </div>
     </div>
   );
 }
