@@ -4,6 +4,7 @@ import Advice from "./Advice";
 
 function App() {
   const [advice, setAdvice] = useState("");
+  // const [isActive, setIsActive] = useState(false);
 
   const fetchAdvice = async () => {
     try {
@@ -15,12 +16,10 @@ function App() {
     }
   };
 
+
   return (
     <div className="app">
-      <Advice advice={advice} />
-      <div className="btn" onClick={fetchAdvice}>
-        <img src="public/images/icon-dice.svg" alt="roll" className="dice"/>
-      </div>
+      <Advice advice={advice} fetchAdvice={fetchAdvice}/>
     </div>
   );
 }
