@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
 * {
   padding: 0;
   margin: 0;
@@ -6,6 +8,7 @@
 
 body {
   font-family: 'Manrope';
+  font-weight: 800;
 }
 
 :root {
@@ -39,27 +42,32 @@ body {
 
 .advice-container {
   /* background: skyblue; */
-  padding: 0 5%;
+  height: 45%;
+  width: 90%;
   margin-top: 2%;
+  /* padding: 0 0%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 #ad {
-  font-size: .7em;
+  font-size: .68em;
   letter-spacing: .2em;
   color: var(--neon-green);
   font-weight: 800;
-  margin-top: 10%;
+  margin-top: 12%;
 }
 
 .advice-container p {
   text-align: center;
-  font-size: 28px;
-  font-weight: 800;
+  font-size: 1.3rem;
   color: white;
 }
 
 .mbl-divider {
-  width: 80%;
+  width: 85%;
   margin-top: 10%;
 }
 
@@ -83,29 +91,38 @@ body {
 .dice {
   position: absolute;
   top: 33.5%;
-  left: 30%;
+  left: 29%;
 }
 
 .btn:hover {
   box-shadow: 0 0 20px 2px var(--neon-green);
 }
 
-.no-quote{
+.no-quote {
   margin-top: 50%;
 }
 
 @media screen and (min-width: 768px) {
+  .container {
+    background-color: var(--dark-grayish-blue);
+    width: 50%;
+    height: 50%;
+    margin-top: 20%;
+  }
+
   #ad {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
 
 
   .advice-container p {
-    font-size: 28px;
+    font-size: 2rem;
   }
 
-  .container {
-    width: 70%;
+  .advice-container {
+    margin-top: 1%;
+    height: 50%;
+    /* background-color: aqua; */
   }
 
   .mbl-divider {
@@ -114,7 +131,19 @@ body {
 
   .dktp-divider {
     display: block;
-    margin-top: 10%;
+    position: absolute;
+    top: 80%;
+    width: 80%;
+  }
+
+  .btn {
+    height: 5rem;
+    width: 5rem;
+    top: 93%;
+  }
+
+  .dice {
+    left: 33%;
   }
 }
 
@@ -124,17 +153,67 @@ body {
     margin-top: 15%;
     border-radius: 20px;
     width: 40%;
+    height: 40%;
   }
 
-  .dktp-divider{
-    width: 70%;
+  #ad {
+    font-size: 1.7rem;
   }
 
-}@media screen and (min-width:1440px) {
+    .advice-container  {
+      margin-top: 1%;
+      height: 50%;
+/* background-color: aqua; */
+    }
+  .advice-container p {
+    font-size: 2rem;
+  }
+
+  .dktp-divider {
+    top: 80%;
+    width: 80%;
+  }
+
+    .btn {
+      height: 4rem;
+      width: 4rem;
+      top: 93%;
+    }
+  
+    .dice {
+      height: 1.5rem;
+      top: 28%;
+      left: 28%;
+    }
+}
+
+@media screen and (min-width:1440px) {
   .container {
-    margin-top: 10%;
+    margin-top: 15%;
     border-radius: 20px;
-    width: 30%;
+    width: 40%;
+    height: 40%;
+  }
+
+  #ad {
+    margin-top: 6%;
+    font-size: .8rem;
+  }
+
+
+  .advice-container {
+    margin-top: 1%;
+    height: 50%;
+    /* background-color: aqua; */
+  }
+
+  .advice-container p {
+    font-size: 2rem;
+  }
+
+
+  .dktp-divider {
+    top: 75%;
   }
 
 }

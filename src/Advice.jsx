@@ -5,7 +5,7 @@ const Advice = ({ advice, fetchAdvice }) => {
     <div className="container">
       <p id="ad">ADVICE #{advice.id}</p>
       <div className="advice-container">
-        <p>{advice.advice}</p>
+        <p>"{advice.advice}"</p>
       </div>
       <img
         src="/images/pattern-divider-mobile.svg"
