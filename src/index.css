@@ -182,7 +182,7 @@ body {
   
     .dice {
       height: 1.5rem;
-      top: 28%;
+      top: 28.5%;
       left: 28%;
     }
 }
@@ -196,13 +196,13 @@ body {
   }
 
   #ad {
-    margin-top: 6%;
+    margin-top: 7%;
     font-size: .8rem;
   }
 
 
   .advice-container {
-    margin-top: 1%;
+    margin-top: 0%;
     height: 50%;
     /* background-color: aqua; */
   }
@@ -213,7 +213,7 @@ body {
 
 
   .dktp-divider {
-    top: 70%;
+    top: 71%;
   }
 
      .btn {
