@@ -5,9 +5,9 @@ import Advice from "./Advice";
 function App() {
   const [advice, setAdvice] = useState("");
   // const [isActive, setIsActive] = useState(false);
-  // window.onload = () => {
-  //   fetchAdvice();
-  // };
+  window.onload = () => {
+    fetchAdvice();
+  };
 
   const fetchAdvice = async () => {
     try {
