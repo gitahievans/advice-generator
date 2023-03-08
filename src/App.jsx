@@ -1,13 +1,13 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Advice from "./Advice";
 
 function App() {
   const [advice, setAdvice] = useState("");
-  // const [isActive, setIsActive] = useState(false);
-  window.onload = () => {
+
+  useEffect(() => {
     fetchAdvice();
-  };
+  }, []);
 
   const fetchAdvice = async () => {
     try {
